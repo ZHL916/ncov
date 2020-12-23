@@ -25,7 +25,7 @@ jobs:
         pip install -r ./requirements.txt
     - name: 石
       run: |
-        python ./upload.py -n 1 -u ${{ secrets.USER_ONE }} -p ${{ secrets.PASS_ONE }} -f ./data/upload.txt
+        python ./upload.py -n 1 -u ${{ secrets.CHENWUJIAN_USERNAME }} -p ${{ secrets.CHENWUJIAN_PASSWORD}} -f ./data/upload.txt
     - name: 王
       run: |
         python ./upload.py -n 1 -u ${{ secrets.USER_TWO }} -p ${{ secrets.PASS_TWO }} -f ./data/upload.txt
